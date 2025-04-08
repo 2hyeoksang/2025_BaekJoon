@@ -5,7 +5,7 @@ def dfs(num):
     global cnt
     # visited[num - 1] = 1
     order[num - 1] = cnt
-    new_arr = sorted(arr[num-1])
+    new_arr = sorted(arr[num-1], reverse = True)    # 24480 할 때는 reverse = True 추가
     # print(cnt)
     for idx in new_arr:
         if order[idx - 1] == 0 :
